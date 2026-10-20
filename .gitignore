@@ -1,0 +1,27 @@
+# 构建产物
+build/
+dist/
+*.spec
+
+# 测试临时目录
+.test_work/
+.logs/
+
+# 运行期日志(QtWebEngine / 自检在 cwd 落下的)
+debug.log
+*.log
+
+# 抓包取证产物(tests/probe_*.py 的输出, 含完整 Cookie/Referer, 不入库)
+.probe/
+
+# 逆向分析用的参考仓库克隆(仅本地参考, 不入库)
+tools/_ref/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 交付物(体积大, 按需发布)
+M3U8视频下载器_v*.exe
